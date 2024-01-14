@@ -41,5 +41,12 @@ public class LineStringTest {
 	LineString l = new LineString(points);
 	Assert.assertEquals(p1, l.getPointN(0));
 	}
+	
+	@Test
+	public void testLineStringIsEmpty() {
+		LineString l = new LineString();
+		Assert.assertTrue(l.isEmpty());
+		
+	}
 
 }

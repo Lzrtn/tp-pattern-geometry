@@ -25,5 +25,11 @@ public class PointTest {
 		Point p = new Point();
 		Assert.assertEquals("Point", p.getType());
 	}
+	
+	@Test
+	public void testPointIsEmpty() {
+		Point p = new Point();
+		Assert.assertTrue(p.isEmpty());
+	}
 
 }
