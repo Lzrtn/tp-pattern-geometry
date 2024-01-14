@@ -33,4 +33,9 @@ public class Point implements Geometry{
 		Coordinate ctrans = new Coordinate(xtrans,ytrans);
 		this.coordinate = ctrans;
 	}
+	
+	@Override
+	public Point clone() {
+		return new Point(this.coordinate);
+	}
 }
